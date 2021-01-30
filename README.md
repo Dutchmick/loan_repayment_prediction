@@ -8,17 +8,17 @@ Traditional metrics for credit scoring were not used to create this model (e.g. 
 
 
 # Potential improvements:
-##I Use a different method of feature selection (*e.g. correlation, Recursive feature selection*) 
-##II Research based feature engineering
+## I - Use a different method of feature selection (*e.g. correlation, Recursive feature selection*) 
+## II - Research based feature engineering
 Research on loan repayment could lead to new and improved features. This could be based supplemented based on interviews with loan repayment experts.
 
-##III Include more parameters as part of the Hyper Parameter Tuning process
+## III - Include more parameters as part of the Hyper Parameter Tuning process
 Because HPT is a resource intensive process, only a select amount of hyper parameters have been used. Expanding testing parameters will likely lead to improved model performance.
 
-##IV Include more or different algorithms
+## IV - Include more or different algorithms
 As per HPT, testing algorithms is a resources intensive process. 
 
-##V Choose a different balancing methods
+## V - Choose a different balancing methods
 The majority of customers (91%) did not experience any repayment difficulties, creating an unbalanced dataset. Depending on the algorithm, this may lead to skewed results. For instance, if a model would predict that no customers experience payment difficulties, it would likely be correct 91% of the cases. While this is great model accuracy, this does not help in identifying customers with payment difficulties.
 
 For this dataset I decided to balance the dataset using upsampling, but other resampling techniques can be used. For instance:
