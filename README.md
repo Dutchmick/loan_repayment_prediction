@@ -1,10 +1,14 @@
 # Loan repayment behaviour prediction
 
 **Objective**: case study of a machine learning model that can be used to predict loan repayment behaviour of currently excluded customers of formal financial services. 
-Traditional metrics for credit scoring were not used to create this model (e.g. credit card repayment, previous bank loans).
+Traditional metrics for credit scoring were excluded to create this model (e.g. credit card repayment, previous bank loans).
 
 **Data source**: [Kaggle Home Credit Dataset](https://www.kaggle.com/c/home-credit-default-risk)
 
+# Notebook structure
+**I - Exploratory Data Analysis** which explores the dataset in preparation of the cleaning and modelling
+**II - Data Cleaning** which prepares the dataset for the predictive modelling
+**III - ML ensemble** which applies ensemble modelling to select the best algorithm and parameters.
 
 # Potential improvements
 
@@ -20,7 +24,7 @@ Because HPT is a resource intensive process, only a select amount of hyper param
 **IV - Include more or different algorithms**
 As per HPT, testing algorithms is a resources intensive process. 
 
-**V - Choose a different balancing methods**
+**V - Choose a different balancing method**
 The majority of customers (91%) did not experience any repayment difficulties, creating an unbalanced dataset. Depending on the algorithm, this may lead to skewed results. For instance, if a model would predict that no customers experience payment difficulties, it would likely be correct 91% of the cases. While this is great model accuracy, this does not help in identifying customers with payment difficulties.
 
 For this dataset I decided to balance the dataset using upsampling, but other resampling techniques can be used. For instance:
@@ -35,10 +39,7 @@ Use unbalanced dataset vs artificially balanced
 
 
 
-
-
-Project Organization
-------------
+# Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
