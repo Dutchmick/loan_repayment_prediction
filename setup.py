@@ -9,6 +9,4 @@ setup(
     license='MIT',
 )
 
-[flake8]
-exclude = .git,*migrations*
-max-line-length = 119
+
