@@ -6,9 +6,36 @@ Traditional metrics for credit scoring were excluded to create this model (e.g. 
 **Data source**: [Kaggle Home Credit Dataset](https://www.kaggle.com/c/home-credit-default-risk)
 
 # Notebook structure
-**I - Exploratory Data Analysis** which explores the dataset in preparation of the cleaning and modelling
-**II - Data Cleaning** which prepares the dataset for the predictive modelling
-**III - ML ensemble** which applies ensemble modelling to select the best algorithm and parameters.
+## I - Exploratory Data Analysis** which explores the dataset in preparation of the cleaning and modelling
+
+
+## II - Basic data cleaning & modelling
+Data cleaning and modelling which can quickly be deployed and used to develop a benchmark predition model
+
+** Notebooks:**
+- Data cleaning notebook
+- Modelling notebook
+
+
+## III - Advanced data cleaning & modelling
+Showcase of more advanced techniques that can be applied to improve model performance. The notebook is meant to showcase some techniques, but may not necessarily apply to this project.
+
+Examples of more advanced techniques:
+- *IQR outlier removal* - Statistical method which removes outliers falling outside the Inter Quartile Range (IQR)
+- *Missing data prediction* - Estimate missing values using machine learning algorithms
+- 
+
+
+
+
+** Notebooks:**
+- Data cleaning notebook
+- Modelling notebook
+
+
+
+
+
 
 # Potential improvements
 
@@ -26,6 +53,10 @@ As per HPT, testing algorithms is a resources intensive process.
 
 **V - Choose a different balancing method**
 The majority of customers (91%) did not experience any repayment difficulties, creating an unbalanced dataset. Depending on the algorithm, this may lead to skewed results. For instance, if a model would predict that no customers experience payment difficulties, it would likely be correct 91% of the cases. While this is great model accuracy, this does not help in identifying customers with payment difficulties.
+
+**VI - Optimise code**
+Code can run a lot faster when optimised.
+
 
 For this dataset I decided to balance the dataset using upsampling, but other resampling techniques can be used. For instance:
 - Random under-sampling;
