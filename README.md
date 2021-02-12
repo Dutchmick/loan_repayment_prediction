@@ -23,17 +23,15 @@ Showcase of more advanced techniques that can be applied to improve model perfor
 Examples of more advanced techniques:
 - *IQR outlier removal* - Statistical method which removes outliers falling outside the Inter Quartile Range (IQR)
 - *Missing data prediction* - Estimate missing values using machine learning algorithms
-- 
-
-
-
+- *Polynimonal feature creation* - Increase features by myltiplying features with each other
+- *Multi-collineairity* - Identify features which highly correlate and can distort the final model
+- *Random forest feature selection * - Use an algorithm to find the best features
+- *Algorithm selection* - Compare algorithms to select the best performing one
+- *Hyper Parameter Tuning* - Select the optimal combination parameters for best model performance
 
 ** Notebooks:**
 - Data cleaning notebook
 - Modelling notebook
-
-
-
 
 
 
